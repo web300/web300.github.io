@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>886LIFE</title>
-    <link href="https://886life.com/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js" type="9358db031de30405b7dbf80a-text/javascript"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>886LIFE - Free Tools</title>
+      <meta name="description" content="ᴅᴇsɪɢɴᴇᴅ ʙʏ 886𝓛𝓲𝓯𝓮.𝓒𝓸𝓶">
+    <link href="https://www.886life.com/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js" type="99a782b97c71649eff8d5453-text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <style>
         :root {
             --primary-color: #165DFF;
@@ -22,21 +24,19 @@
         body {
             background-color: var(--light-bg);
             color: #333;
-            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Inter', 'Noto Sans TC', 'Segoe UI', sans-serif;
             line-height: 1.6;
         }
         
         header {
             padding: 0.2rem 0;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, #0e0e0e, #434c5f);
             color: white;
             border-radius: 0 0 1rem 1rem;
             margin-bottom: 1rem;
             box-shadow: 0 4px 12px rgba(22, 93, 255, 0.15);
         }
-        .container {
-            max-width: 1000px;
-         }
+
         .price-card {
             border: none;
             border-radius: 1rem;
@@ -75,9 +75,10 @@
         .price-list-item {
             display: flex;
             justify-content: space-between;
-            font-size: 1.1rem;
+            font-size: 1.6rem;
+            font-weight: bold;
             border-bottom: 1px dashed #eee;
-            padding: 0.35rem 0;
+            padding: 0.1rem 0;
             margin: 0;
             transition: background-color var(--transition-speed);
         }
@@ -122,22 +123,25 @@
         }
         
         section {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             padding: 0.5rem;
             background-color: white;
             border-radius: 1rem;
             box-shadow: var(--card-shadow);
         }
         
-        h2 {
-            color: var(--primary-color);
-            font-weight: 500;
-            margin-bottom: 0.3rem;
-            padding-bottom: 0.3rem;
-            border-bottom: 2px solid rgba(22, 93, 255, 0.1);
-            display: inline-block;
-        }
-        
+h2 {
+    color: rgb(63 68 75);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgba(22, 119, 255, 0.25);
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease;
+}
         .table {
             border-radius: 1rem;
             overflow: hidden;
@@ -170,8 +174,8 @@
         }
         
         footer {
-            margin-top: 3rem;
-            padding: 2rem 0;
+            margin-top: 1rem;
+            padding: 1rem 0;
             background-color: white;
             border-radius: 1rem 1rem 0 0;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
@@ -190,7 +194,6 @@
             padding: 0.2rem 0.5rem;
         }
 
-        /* 文章列表样式 */
         .article-card {
             border: none;
             border-radius: 1rem;
@@ -213,7 +216,7 @@
         }
         
         .article-content {
-            padding: 1rem;
+            padding: 0.5rem;
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -222,7 +225,7 @@
         .article-title {
             font-weight: bold;
             color: #333;
-            font-size: 1.1rem;
+            font-size: 1.6rem;
             margin-bottom: 0.75rem;
             transition: color var(--transition-speed);
         }
@@ -255,13 +258,13 @@
         .hot-tag {
             background-color: rgba(245, 63, 63, 0.1);
             color: var(--danger-color);
-            font-size: 0.8rem;
+            font-size: 1.5rem;
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
             margin-right: 0.5rem;
         }
         .nav-links {
-            margin: 1rem 0 2rem;
+            margin: 1rem 0 1rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -283,14 +286,16 @@
             font-size: 0.8rem;
             color: #dbc3c3;
         }
-        
+        .col-md-3{flex:0 0 auto;width:25%}
+        .col-md-9{flex:0 0 auto;width:75%}
+        .align-items-end{align-items:flex-end!important}
         @media (max-width: 768px) {
             .price-list-item {
                 font-size: 1rem;
             }
             
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
             .chart-container {
@@ -312,7 +317,6 @@
     }
 }
     </style>
-
 </head>
 <body>
 
@@ -344,7 +348,7 @@
     </header>
 
     <div class="container">
-            <section>
+<section>
             <h2><i class="bi bi-gas-pump-fill me-2"></i>最新油價</h2>
             <div class="row g-4">
                 <div class="col-lg-6">
@@ -354,19 +358,19 @@
                             <ul class="list-unstyled">
                                 <li class="price-list-item">
                                     <span>92無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a92-container"><span id="latest-a92">26.9</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-a92-container"><span id="latest-a92">27.3</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>95無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a95-container"><span id="latest-a95">28.4</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-a95-container"><span id="latest-a95">28.8</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>98無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a98-container"><span id="latest-a98">30.4</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-a98-container"><span id="latest-a98">30.8</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>超級柴油</span>
-                                    <span class="price-value up" id="latest-achai-container"><span id="latest-achai">25.7</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-achai-container"><span id="latest-achai">26.2</span> 元/公升</span>
                                 </li>
                             </ul>
                         </div>
@@ -379,28 +383,33 @@
                              <ul class="list-unstyled">
                                 <li class="price-list-item">
                                     <span>92+無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b92-container"><span id="latest-b92">26.9</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-b92-container"><span id="latest-b92">27.3</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>95+無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b95-container"><span id="latest-b95">28.4</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-b95-container"><span id="latest-b95">28.8</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>98無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b98-container"><span id="latest-b98">30.4</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-b98-container"><span id="latest-b98">30.8</span> 元/公升</span>
                                 </li>
                                 <li class="price-list-item">
                                     <span>超級柴油</span>
-                                    <span class="price-value up" id="latest-bchai-container"><span id="latest-bchai">25.5</span> 元/公升</span>
+                                    <span class="price-value up" id="latest-bchai-container"><span id="latest-bchai">26.0</span> 元/公升</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+<ins class="adsbygoogle"
+     style="display:block;height:120px;max-width:1300px;"
+     data-ad-client="ca-pub-8992771175158812"
+     data-ad-slot="7247913518"></ins>
             </div>
+       
         </section>
    <section>
-            <h2><i class="bi bi-gas-pump-fill me-2"></i>台灣郵編查詢</h2>
+            <h2><i class="bi bi-envelope me-2"></i>ᴛᴀɪᴘᴇɪ ᴢɪᴘ</h2>
             <div class="row g-4">
 
 
@@ -478,9 +487,62 @@
 </div>
   
   </div>
-        </section>   
+        </section> 
+<section id="url-shortener">
+    <h2><i class="bi bi-link-45deg me-2"></i>sʜᴏʀᴛ ʟɪɴᴋ</h2>
+    <div class="row g-4">
+        <div class="col-12">
+
+
+                <div class="card-body">
+                    <form id="urlForm" class="row g-3 align-items-center">
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input type="url" class="form-control" id="url" 
+                                       placeholder="https://www.886life.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="bi bi-compress me-1"></i> 生成
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div id="urlLoading" class="loading mt-3">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">加載中...</span>
+                        </div>
+                        <p class="mt-2 text-muted">正在生成短連結...</p>
+                    </div>
+                    
+                    <div id="urlError" class="error alert alert-danger mt-3">
+                        <i class="bi bi-exclamation-circle me-2"></i>
+                        <span id="urlErrorMessage"></span>
+                    </div>
+                    
+                    <div id="urlResult" class="result alert alert-success mt-3">
+                        <h5 class="alert-heading"><i class="bi bi-check-circle me-2"></i>生成成功</h5>
+                        短連結: 
+                        <div class="input-group mt-2">
+                            <input type="text" id="shortUrl" class="form-control" readonly>
+                            <button class="btn btn-outline-secondary" id="copyBtn">
+                                <i class="bi bi-clipboard"></i> 複製
+                            </button>
+                            <a id="visitBtn" href="#" target="_blank" class="btn btn-outline-primary">
+                                <i class="bi bi-box-arrow-up-right"></i> 訪問
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+    
         <section>
-            <h2><i class="bi bi-newspaper me-2"></i>TOOLS</h2>
+            <h2><i class="bi bi-newspaper me-2"></i>ɢᴀᴅɢᴇᴛ</h2>
  <div class="row g-4">
     <div class="col-md-6 col-lg-4">
         <a href="https://zip.886life.com" class="text-decoration-none">
@@ -494,57 +556,6 @@
         </a>
     </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <a href="/tools/fangdai.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">房貸</span>房貸計算器</h5>
-                            <p class="article-excerpt">使用房貸計算器輕鬆計算台灣房貸的每月還款金額，支援貸款總金額、貸款年限、利率等多種設置，幫助您了解房貸支付情況。</p>
-                
-                        </div>
-                    </div> </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="/tools/youjia.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">油價</span>最新油價資訊與走勢圖</h5>
-                            <p class="article-excerpt">提供最新的油價資訊及走勢圖，讓您了解全球及台灣油價波動，輕鬆掌握油價變化趨勢，協助您做出最佳的加油決策。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                   <div class="col-md-6 col-lg-4">
-                    <a href="https://time.886life.com/tw/taipei/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">時間</span>臺灣省台北時間</h5>
-                            <p class="article-excerpt">台灣採用單一時區，稱為國家標準時間或台灣時間。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                  <div class="col-md-6 col-lg-4">
-                    <a href="/tools/wordcount.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">計數</span>文字計數工具</h5>
-                            <p class="article-excerpt">多功能文字統計與處理工具，支持多種統計維度和段落整理。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="/tools/gbk-big5-gb2312-utf8.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">繁簡</span>繁簡轉換工具</h5>
-                            <p class="article-excerpt">簡體轉繁體、繁體轉簡體，支持GBK與BIG5編碼互轉。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                
                            <div class="col-md-6 col-lg-4">
                      <a href="https://instagram.886life.com/tw/" class="text-decoration-none">
                     <div class="card shadow-sm article-card">
@@ -553,7 +564,7 @@
                                 <span class="hot-tag">字體</span>
                                 Instagram 字體工具
                             </h5>
-                            <p class="article-excerpt">在第一個框中輸入文本後，文本生成器將實時將其轉換為多種字體樣式。您可以複製轉換後的文本並粘貼到 Instagram、Twitter 或 Facebook 上，適用於簽名、照片說明和評論。</p>
+                            <p class="article-excerpt">在第一個框中輸入文本後，文本生成器將實時將其轉換為多種字體樣式。</p>
                        
                         </div>
                     </div></a>
@@ -584,6 +595,18 @@
                         </div>
                     </div></a>
                 </div>
+                     
+                   <div class="col-md-6 col-lg-4">
+                    <a href="https://time.886life.com/tw/taipei/" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">時間</span>臺灣省台北時間</h5>
+                            <p class="article-excerpt">台灣採用單一時區，稱為國家標準時間或台灣時間。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+
                  <div class="col-md-6 col-lg-4">
                     <a href="https://emoji.886life.com/" class="text-decoration-none">
                     <div class="card shadow-sm article-card">
@@ -663,33 +686,345 @@
                         </div>
                     </div></a>
                 </div>
+                         <div class="col-md-6 col-lg-4">
+                    <a href="https://unit.886life.com/tw/" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title">
+                                <span class="hot-tag">單位</span>
+                               單位換算器
+                            </h5>
+                            <p class="article-excerpt">免費的多功能單位換算器，支援長度、重量、溫度、體積、面積、資料等單位轉換。</p>
+                   
+                        </div>
+                    </div></a>
+                </div>
+                          <div class="col-md-6 col-lg-4">
+                    <a href="https://textcount.886life.com/zh-hant/analyzer/" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title">
+                                <span class="hot-tag">計數</span>
+                               英語單字計數
+                            </h5>
+                            <p class="article-excerpt">統計英文文本中的總詞數、獨特單字數量、母音與子音個數，並生成可排序的詞頻表。</p>
+                   
+                        </div>
+                    </div></a>
+                </div>
+                          <div class="col-md-6 col-lg-4">
+                    <a href="https://textcount.886life.com/zh-hant/" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title">
+                                <span class="hot-tag">字數</span>
+                               字數計算文字計算
+                            </h5>
+                            <p class="article-excerpt">統計總字符數、中文字符、英文單字、標點符號等，適合寫作、翻譯、排版與文本分析。</p>
+                   
+                        </div>
+                    </div></a>
+                </div>
+                                <div class="col-md-6 col-lg-4">
+                    <a href="https://table.886life.com/zh-hant/" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title">
+                                <span class="hot-tag">在線</span>
+                               表格生成器
+                            </h5>
+                            <p class="article-excerpt">在線表格生成器，支持 Markdown、HTML、文本和 LaTeX 格式</p>
+                   
+                        </div>
+                    </div></a>
+                </div>
+                <ins class="adsbygoogle"
+     style="display:block;height:120px;max-width:1300px;"
+     data-ad-client="ca-pub-8992771175158812"
+     data-ad-slot="6047443067"></ins>
+            </div>
+        </section>
+        
+        <section>
+            <h2><i class="bi bi-newspaper me-2"></i>MiNi Tools</h2>
+ <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/circle_area.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>圓面積</h5>
+<p class="article-excerpt">計算圓形面積，支持半徑、直徑、周長輸入，帶SVG可視化圖表。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/metric_thread.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">查詢</span>公制螺紋</h5>
+<p class="article-excerpt">ISO公制螺紋規格查詢表，支持篩選功能和參數對比。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/length_conversion.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">換算</span>長度換算</h5>
+<p class="article-excerpt">長度單位即時換算，支持毫米、釐米、米、英寸互轉。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/cylinder_volume.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>圓柱體積</h5>
+<p class="article-excerpt">圓柱體積和表面積計算器，帶3D可視化效果圖。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/factor_calculator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>因數計算</h5>
+<p class="article-excerpt">計算整數的所有因數和質因數分解，支持質數判斷。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/fraction_calculator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>分數計算</h5>
+<p class="article-excerpt">分數四則運算計算器，支持通分、約分和混合運算。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/astrology_calculator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">查詢</span>星座計算</h5>
+<p class="article-excerpt">根據出生時間和地點計算太陽、月亮和上升星座。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/std_deviation.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">統計</span>標準偏差</h5>
+<p class="article-excerpt">高精度標準偏差計算器，支持樣本和總體標準偏差。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/name_generator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">生成</span>姓名生成</h5>
+<p class="article-excerpt">隨機中文姓名生成器，支持不同風格和字數選擇。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/proportion_calculator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>比例計算</h5>
+<p class="article-excerpt">比例計算器，解決 a:b = c:x 類型的比例問題。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/age_calculator.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">計算</span>年齡計算</h5>
+<p class="article-excerpt">精確計算年齡、生活天數和各種時間統計信息。</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col-md-6 col-lg-4">
+<a href="https://www.886life.com/tools/mtool/mtool/srt_to_txt.php?lang=zh-hant" class="text-decoration-none">
+<div class="card shadow-sm article-card">
+<div class="article-content">
+<h5 class="article-title"><span class="hot-tag">轉換</span>SRT轉TXT</h5>
+<p class="article-excerpt">SRT字幕文件轉換為純文本格式，去除時間戳和格式標記。</p>
+</div>
+</div>
+</a>
+</div>
+            </div>
+        </section>
+        
+<section>
+            <h2><i class="bi bi-newspaper me-2"></i>ʟɪғᴇ</h2>
+ <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/fangdai.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">房貸</span>房貸計算器</h5>
+                            <p class="article-excerpt">使用房貸計算器輕鬆計算台灣房貸的每月還款金額，支援貸款總金額、貸款年限、利率等多種設。</p>
+                
+                        </div>
+                    </div> </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/youjia.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">油價</span>最新油價資訊與走勢圖</h5>
+                            <p class="article-excerpt">提供最新的油價資訊及走勢圖，讓您了解全球及台灣油價波動，輕鬆掌握油價變化趨勢，協助您做出最佳的加油決策。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/wordcount.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">計數</span>文字計數工具</h5>
+                            <p class="article-excerpt">多功能文字統計與處理工具，支持多種統計維度和段落整理。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/gbk-big5-gb2312-utf8.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">繁簡</span>繁簡轉換工具</h5>
+                            <p class="article-excerpt">簡體轉繁體、繁體轉簡體，支持GBK與BIG5編碼互轉。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                
+
             </div>
         </section>
 
+        <section>
+            <h2><i class="bi bi-newspaper me-2"></i>sᴄʜᴏᴏʟ</h2>
+ <div class="row g-4">
+
+<div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/lever/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">教學</span>槓桿原理教學演示</h5>
+                            <p class="article-excerpt">通過互動演示，幫助學生了解三類槓桿的結構及工作原理。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+               
+                
+        <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/solar/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">天體</span>太陽系天體運動模擬器</h5>
+                            <p class="article-excerpt">讓小學生輕鬆理解太陽、地球和月亮的運動規律。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+         <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/laser/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">雷射</span>雷射折射模擬器</h5>
+                            <p class="article-excerpt">雷射折射模擬器幫助學生觀察雷射從空氣射入水中時的折射與全反射現象。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/convex-lens/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">凸透镜</span>凸透镜成像原理模拟器</h5>
+                            <p class="article-excerpt">探索凸透镜如何影响成像的性质。适合物理课堂和光学科普教学。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                    <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/mean-vs-median/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">理解</span>平均數 vs 中位數</h5>
+                            <p class="article-excerpt">深入理解平均數與中位數的區別，以及它們在不同數據分布中的表現。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                    <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/pythagorean-theorem/tw.html" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">演示</span>勾股定理互動演示</h5>
+                            <p class="article-excerpt">通過互動演示，探索勾股定理中直角三角形三條邊的關係。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                       <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/algebra/quadratic-equation.php" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">計算</span>一元二次方程式計算機</h5>
+                            <p class="article-excerpt">一元二次方程式是數學中的基本概念，標準形式為 ax² + bx + c = 0，其中 a ≠ 0。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                         <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/algebra/twovar.php" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">計算</span>二元一次方程式計算機</h5>
+                            <p class="article-excerpt">二元一次方程組是包含兩個未知數的線性方程組，標準形式為：a₁x + b₁y = c₁ 和 a₂x + b₂y = c₂</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+                      <div class="col-md-6 col-lg-4">
+                    <a href="https://www.886life.com/tools/mtool/numbers/exponential-power.php" class="text-decoration-none">
+                    <div class="card shadow-sm article-card">
+                        <div class="article-content">
+                            <h5 class="article-title"><span class="hot-tag">計算</span>任意N次方程式計算機</h5>
+                            <p class="article-excerpt">N次多項式方程是代數方程的一般形式，包含最高次項為xⁿ的項。</p>
+                     
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </section>
     </div>
 <div id="privacy-banner" style="position:fixed;right:1rem;bottom:1rem;background:#fff;color:#333;border:1px solid #ccc;border-radius:.75rem;box-shadow:0 4px 12px rgba(0,0,0,.1);max-width:300px;z-index:9999;padding:1rem;font-size:.9rem;display:none"><p style="margin-bottom:.5rem">本網站使用 Cookie 以提升使用體驗，詳情請參閱<a href="/privacy.html" target="_blank" style="color:var(--primary-color);text-decoration:underline">隱私政策</a>。</p><button id="accept-privacy-btn" style="background-color:var(--primary-color);color:#fff;border:none;border-radius:.5rem;padding:.4rem 1rem;cursor:pointer">我接受</button></div>
     <footer class="text-center text-muted">
         <p class="mt-1 small">886LiFe Free Tools</p>
-       <p class="mt-1 small">
-    <a href="https://zip.886life.com/">Taiwan Postal Code Lookup</a>
-    <a href="https://886life.com/tools/fangdai.html">Mortgage Calculator</a>
-    <a href="https://886life.com/tools/youjia.html">Latest Taiwan Fuel Prices & Trends</a>
-    <a href="https://time.886life.com/tw/taipei/">Taipei Time, Taiwan</a>
-    <a href="https://886life.com/tools/wordcount.html">Word Counter Tool</a>
-    <a href="https://886life.com/tools/gbk-big5-gb2312-utf8.html">Traditional & Simplified Chinese Converter</a>
-    <a href="https://instagram.886life.com/tw/">Instagram Font Generator</a>
-    <a href="https://random-wheel.886life.com/">Random Wheel</a>
-    <a href="https://rili.886life.com/">Lunar Calendar</a>
-    <a href="https://emoji.886life.com/">Emoji Symbols</a>
-    <a href="https://x-symbols.886life.com/">Facebook Symbols</a>
-    <a href="https://cool-text.886life.com/">Cool Text Generator</a>
-    <a href="https://random-dice.886life.com/">Dice Roller Simulator</a>
-    <a href="https://symbol.886life.com/">✪ Symbol Collection</a>
-    <a href="https://100.886life.com/tw/">Percentage Calculator</a>
-</p>
-
     </footer>
-<script type="9358db031de30405b7dbf80a-text/javascript">
+<script type="99a782b97c71649eff8d5453-text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
     if (!localStorage.getItem("privacyAccepted")) {
       document.getElementById("privacy-banner").style.display = "block";
@@ -701,7 +1036,172 @@
     });
   });
 </script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="9358db031de30405b7dbf80a-text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="99a782b97c71649eff8d5453-text/javascript"></script>
+<script type="99a782b97c71649eff8d5453-text/javascript">
+$(document).ready(function() {
+  if ($('#city').length) {
+    const language = 'zh';
 
+    const citySelect = $('#city');
+    const areaSelect = $('#area');
+    const roadSelect = $('#road');
+    const resultContainer = $('#result-container');
+    const zipcodeList = $('#zipcode-list');
+    const loading = $('#loading');
+    const emptyState = $('#empty-state');
+    const errorState = $('#error-state');
+
+    function resetUI() {
+      resultContainer.addClass('d-none');
+      emptyState.addClass('d-none');
+      errorState.addClass('d-none').text('加載數據時出錯，請稍後重試');
+      loading.addClass('d-none');
+    }
+
+    citySelect.on('change', function() {
+      const cityId = $(this).val().trim();
+
+      resetUI();
+      areaSelect.html(`<option value="">請選擇省份</option>`).prop('disabled', true);
+      roadSelect.html(`<option value="">請先選擇城市</option>`).prop('disabled', true);
+
+      if (!cityId) return;
+
+      loading.removeClass('d-none');
+
+      $.getJSON(`https://www.886life.com/zip/api.php`, {
+          action: 'get_areas',
+          city_id: cityId,
+          lang: language
+        })
+        .done(function(data) {
+          if (data && data.error) {
+            errorState.text(data.error).removeClass('d-none');
+            return;
+          }
+
+          if (!data || data.length === 0) {
+            areaSelect.html(`<option value="">沒有找到匹配的數據</option>`);
+            return;
+          }
+
+          areaSelect.empty().prop('disabled', false);
+          areaSelect.append(`<option value="">第二步：選擇城市</option>`);
+
+          data.forEach(area => {
+            areaSelect.append(`<option value="${area.id}">${area.name}</option>`);
+          });
+        })
+        .fail(function(xhr, status, error) {
+          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
+        })
+        .always(function() {
+          loading.addClass('d-none');
+        });
+    });
+
+    areaSelect.on('change', function() {
+      const areaId = $(this).val().trim();
+
+      resetUI();
+      roadSelect.html(`<option value="">請先選擇城市</option>`).prop('disabled', true);
+
+      if (!areaId) return;
+
+      loading.removeClass('d-none');
+
+      $.getJSON(`https://www.886life.com/zip/api.php`, {
+          action: 'get_roads',
+          area_id: areaId,
+          lang: language
+        })
+        .done(function(data) {
+          if (data && data.error) {
+            errorState.text(data.error).removeClass('d-none');
+            return;
+          }
+
+          if (!data || data.length === 0) {
+            roadSelect.html(`<option value="">沒有找到匹配的數據</option>`);
+            return;
+          }
+
+          roadSelect.empty().prop('disabled', false);
+          roadSelect.append(`<option value="">第三步：選擇區縣</option>`);
+
+          data.forEach(road => {
+            roadSelect.append(`<option value="${road.id}">${road.name}</option>`);
+          });
+        })
+        .fail(function(xhr, status, error) {
+          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
+        })
+        .always(function() {
+          loading.addClass('d-none');
+        });
+    });
+
+    roadSelect.on('change', function() {
+      const roadId = $(this).val().trim();
+
+      resetUI();
+
+      if (!roadId) return;
+
+      loading.removeClass('d-none');
+
+      $.getJSON(`https://www.886life.com/zip/api.php`, {
+          action: 'get_zipcodes',
+          road_id: roadId,
+          lang: language
+        })
+        .done(function(data) {
+          if (data && data.error) {
+            errorState.text(data.error).removeClass('d-none');
+            return;
+          }
+
+          if (!data || data.length === 0) {
+            emptyState.removeClass('d-none');
+            return;
+          }
+
+          zipcodeList.empty();
+          data.forEach(zipcode => {
+            zipcodeList.append(`
+              <a href="https://zip.886life.com/zipcode-${zipcode.id}.html" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <i class="fa fa-map-pin me-1"></i> ${zipcode.zipcode}
+                  </h5>
+                  <span class="badge bg-info text-white">${zipcode.department}</span>
+                </div>
+                <p class="mb-1">
+                  ${zipcode.city_name} ${zipcode.area_name} ${zipcode.road_name}
+                </p>
+                <small class="text-muted">
+                  <i class="fa fa-info-circle me-1"></i> ${zipcode.scope}
+                </small>
+              </a>
+            `);
+          });
+
+          resultContainer.removeClass('d-none');
+        })
+        .fail(function(xhr, status, error) {
+          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
+        })
+        .always(function() {
+          loading.addClass('d-none');
+        });
+    });
+  }
+});
+</script>
+<script type="99a782b97c71649eff8d5453-text/javascript">function loadAd(el){if(!window.adsbygoogleInitDone){const s=document.createElement('script');s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8992771175158812';s.async=true;s.crossOrigin='anonymous';s.onerror=()=>{console.error('Google Ads script failed to load');window.adsbygoogleInitFailed=true};s.onload=()=>{window.adsbygoogleInitDone=true;try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(error){console.error('Error initializing Google Ads:',error)}};document.head.appendChild(s)}else if(!window.adsbygoogleInitFailed){try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(error){console.error('Error pushing ad:',error)}}}function initializeAdLoader(){const observerOptions={rootMargin:'50px 0px',threshold:0.1};const observer=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){loadAd(entry.target);observer.unobserve(entry.target)}})},observerOptions);const observeAds=()=>{const adElements=document.querySelectorAll('.adsbygoogle');if(adElements.length===0){const mutationObserver=new MutationObserver((mutations,obs)=>{const adElements=document.querySelectorAll('.adsbygoogle');if(adElements.length>0){obs.disconnect();adElements.forEach(el=>observer.observe(el))}});mutationObserver.observe(document.body,{childList:true,subtree:true});return}adElements.forEach(el=>{observer.observe(el)})};observeAds()}if(typeof requestIdleCallback==='function'){requestIdleCallback(initializeAdLoader,{timeout:2000})}else{initializeAdLoader()}</script>
+
+<script type="99a782b97c71649eff8d5453-text/javascript">
+$(document).ready(function(){const urlForm=document.getElementById('urlForm');const urlInput=document.getElementById('url');const loading=document.getElementById('urlLoading');const result=document.getElementById('urlResult');const error=document.getElementById('urlError');const errorMessage=document.getElementById('urlErrorMessage');const shortUrlInput=document.getElementById('shortUrl');const copyBtn=document.getElementById('copyBtn');const visitBtn=document.getElementById('visitBtn');const ENCODED_API_ENDPOINT='aHR0cHM6Ly96em4ubWUvdXJsL2FwaS5waHA=';const ENCODED_API_KEY='eW91cl9zZWN1cmVfYXBpX2tleV8xMjM=';const API_ENDPOINT=atob(ENCODED_API_ENDPOINT);const FIXED_API_KEY=atob(ENCODED_API_KEY);const DEFAULT_REDIRECT_TYPE=1;loading.style.display='none';result.style.display='none';error.style.display='none';urlForm.addEventListener('submit',async function(e){e.preventDefault();const url=urlInput.value;loading.style.display='block';result.style.display='none';error.style.display='none';try{const response=await fetch(API_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json',},body:JSON.stringify({api_key:FIXED_API_KEY,url:url,redirect_type:DEFAULT_REDIRECT_TYPE})});const data=await response.json();if(data.success){shortUrlInput.value=data.data.short_url;visitBtn.href=data.data.short_url;loading.style.display='none';result.style.display='block'}else{throw new Error(data.message||'生成短連結失敗');}}catch(err){loading.style.display='none';errorMessage.textContent=err.message;error.style.display='block'}});copyBtn.addEventListener('click',function(){shortUrlInput.select();document.execCommand('copy');const originalText=copyBtn.innerHTML;copyBtn.innerHTML='<i class="bi bi-check"></i> 已複製';copyBtn.classList.remove('btn-outline-secondary');copyBtn.classList.add('btn-success');setTimeout(()=>{copyBtn.innerHTML=originalText;copyBtn.classList.remove('btn-success');copyBtn.classList.add('btn-outline-secondary')},2000)})});</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="99a782b97c71649eff8d5453-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8dfc8b7508b24763b93c8c17c0b6537f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
