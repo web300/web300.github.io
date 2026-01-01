@@ -1,1206 +1,264 @@
 
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>886LIFE - Free Tools</title>
-      <meta name="description" content="ᴅᴇsɪɢɴᴇᴅ ʙʏ 886𝓛𝓲𝓯𝓮.𝓒𝓸𝓶">
-    <link href="https://www.886life.com/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js" type="99a782b97c71649eff8d5453-text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <style>
-        :root {
-            --primary-color: #165DFF;
-            --secondary-color: #36BFFA;
-            --accent-color: #FF6B35;
-            --danger-color: #F53F3F;
-            --success-color: #00B42A;
-            --light-bg: #F5F7FA;
-            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            --transition-speed: 0.3s;
+<!DOCTYPE html><html lang="zh-Hant" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>886LiFe - 免費線上工具集合</title><meta name="description" content="886LiFe 提供免費線上工具，包含計算機、單位換算、文字處理、格式轉換、圖片轉換、健康計算、生活工具、娛樂工具等，無需下載，即開即用。"><meta property="og:type" content="website"><meta property="og:site_name" content="886LiFe"><meta property="og:title" content="886LiFe - 免費線上工具集合"><meta property="og:description" content="886LiFe 提供免費線上工具，包含計算機、單位換算、文字處理、格式轉換、圖片轉換、健康計算、生活工具、娛樂工具等，無需下載，即開即用。"><meta property="og:url" content="https://www.886life.com/"><meta property="og:locale" content="zh-Hant"><meta property="og:image" content="https://www.886life.com/assets/site/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="886LiFe - 免費線上工具集合"><meta name="twitter:description" content="886LiFe 提供免費線上工具，包含計算機、單位換算、文字處理、格式轉換、圖片轉換、健康計算、生活工具、娛樂工具等，無需下載，即開即用。"><meta name="twitter:image" content="https://www.886life.com/assets/site/og-image.png"><link rel="apple-touch-icon" sizes="180x180" href="https://www.886life.com/assets/site/apple-touch-icon.png"><link rel="icon" type="image/png" href="https://www.886life.com/assets/site/favicon-32x32.png" sizes="32x32"><link rel="canonical" href="https://www.886life.com/"><link rel="alternate" hreflang="zh-TW" href="https://www.886life.com/"><link rel="alternate" hreflang="zh-CN" href="https://www.886life.com/zh-Hans/"><link rel="alternate" hreflang="en" href="https://www.886life.com/en/"><link rel="alternate" hreflang="ja" href="https://www.886life.com/ja/"><link rel="alternate" hreflang="ko" href="https://www.886life.com/ko/"><link rel="alternate" hreflang="es" href="https://www.886life.com/es/"><link rel="alternate" hreflang="de" href="https://www.886life.com/de/"><link rel="alternate" hreflang="fr" href="https://www.886life.com/fr/"><link rel="alternate" hreflang="it" href="https://www.886life.com/it/"><link rel="alternate" hreflang="pt" href="https://www.886life.com/pt/"><link rel="alternate" hreflang="ru" href="https://www.886life.com/ru/"><link rel="alternate" hreflang="ar" href="https://www.886life.com/ar/"><link rel="alternate" hreflang="bn" href="https://www.886life.com/bn/"><link rel="alternate" hreflang="cs" href="https://www.886life.com/cs/"><link rel="alternate" hreflang="el" href="https://www.886life.com/el/"><link rel="alternate" hreflang="fa" href="https://www.886life.com/fa/"><link rel="alternate" hreflang="hi" href="https://www.886life.com/hi/"><link rel="alternate" hreflang="hu" href="https://www.886life.com/hu/"><link rel="alternate" hreflang="id" href="https://www.886life.com/id/"><link rel="alternate" hreflang="ms" href="https://www.886life.com/ms/"><link rel="alternate" hreflang="nl" href="https://www.886life.com/nl/"><link rel="alternate" hreflang="pl" href="https://www.886life.com/pl/"><link rel="alternate" hreflang="ro" href="https://www.886life.com/ro/"><link rel="alternate" hreflang="sv" href="https://www.886life.com/sv/"><link rel="alternate" hreflang="th" href="https://www.886life.com/th/"><link rel="alternate" hreflang="tr" href="https://www.886life.com/tr/"><link rel="alternate" hreflang="uk" href="https://www.886life.com/uk/"><link rel="alternate" hreflang="x-default" href="https://www.886life.com/"><link rel="icon" href="https://www.886life.com/favicon.ico"><link rel="preload" href="https://www.886life.com/assets/css/style.css" as="style"><link rel="stylesheet" href="https://www.886life.com/assets/css/style.css"><script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2BWM6S7R9"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y2BWM6S7R9');</script> <body class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors"><header class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50"><div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center"><a href="/" class="text-2xl md:text-3xl font-bold logo-text transition">886LiFe</a> <div class="flex items-center gap-1 md:gap-2"><a href="/" class="hidden sm:inline-flex text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition">🏠 首頁</a> <a href="/blog" class="hidden sm:inline-flex text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition">📝 部落格</a> <div id="authArea" class="hidden sm:block"><a href="/login?redirect=%2F" class="px-3 py-1 rounded-lg text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"> 登入 </a></div> <button id="themeToggle" onclick="toggleTheme()" class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition" aria-label="Toggle theme"><svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> <svg id="moonIcon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button> <button onclick="openLangModal()" class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition" aria-label="Change language"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></button> <button onclick="toggleMobileMenu()" class="sm:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition" aria-label="Menu"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></div> <div id="mobileMenu" class="hidden sm:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800"><div class="px-4 py-3 space-y-2"><a href="/" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition">🏠 首頁</a> <a href="/blog" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition">📝 部落格</a> <div id="authAreaMobile"><a href="/login?redirect=%2F" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition"> 🔐 登入 </a></div></div></div></header> <div id="langModal" class="fixed inset-0 z-50 hidden"><div class="absolute inset-0 bg-black/40" onclick="closeLangModal()"></div> <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 rounded-xl shadow-xl w-72 md:w-[28rem] overflow-hidden"><div class="px-4 py-3 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center"><span class="font-medium text-gray-900 dark:text-white">選擇語言</span> <button onclick="closeLangModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div> <div class="p-3 grid grid-cols-3 gap-2"><a href="/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-900 text-white"> 繁體中文 </a> <a href="/zh-Hans/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> 简体中文 </a> <a href="/en/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> English </a> <a href="/ja/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> 日本語 </a> <a href="/ko/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> 한국어 </a> <a href="/es/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Español </a> <a href="/de/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Deutsch </a> <a href="/fr/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Français </a> <a href="/it/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Italiano </a> <a href="/pt/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Português </a> <a href="/ru/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Русский </a> <a href="/ar/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> العربية </a> <a href="/bn/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> বাংলা </a> <a href="/cs/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Čeština </a> <a href="/el/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Ελληνικά </a> <a href="/fa/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> فارسی </a> <a href="/hi/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> हिन्दी </a> <a href="/hu/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Magyar </a> <a href="/id/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Bahasa Indonesia </a> <a href="/ms/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Bahasa Melayu </a> <a href="/nl/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Nederlands </a> <a href="/pl/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Polski </a> <a href="/ro/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Română </a> <a href="/sv/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Svenska </a> <a href="/th/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> ภาษาไทย </a> <a href="/tr/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Türkçe </a> <a href="/uk/" class="flex flex-col items-center justify-center px-2 py-3 rounded-lg text-sm transition bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600"> Українська </a></div></div></div> <script>(function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
         }
-        
-        body {
-            background-color: var(--light-bg);
-            color: #333;
-            font-family: 'Inter', 'Noto Sans TC', 'Segoe UI', sans-serif;
-            line-height: 1.6;
-        }
-        
-        header {
-            padding: 0.2rem 0;
-            background: linear-gradient(135deg, #0e0e0e, #434c5f);
-            color: white;
-            border-radius: 0 0 1rem 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 12px rgba(22, 93, 255, 0.15);
-        }
-
-        .price-card {
-            border: none;
-            border-radius: 1rem;
-            overflow: hidden;
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-            height: 100%;
-        }
-        
-        .price-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        }
-        
-        .price-card h5 {
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            padding: 0.5rem 0.5rem;
-            margin: 0;
-            border-radius: 0;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-        }
-        
-        
-        .price-card h5 i {
-            font-size: 1rem;
-        }
-        
-        .price-card .card-body {
-            padding: 1rem;
-        }
-        
-        .price-list-item {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.6rem;
-            font-weight: bold;
-            border-bottom: 1px dashed #eee;
-            padding: 0.1rem 0;
-            margin: 0;
-            transition: background-color var(--transition-speed);
-        }
-        
-        .price-list-item:hover {
-            background-color: rgba(22, 93, 255, 0.03);
-            padding-left: 0.5rem;
-            border-radius: 0.5rem;
-        }
-        
-        .price-list-item:last-child {
-            border-bottom: none;
-        }
-        
-        .price-value {
-            font-weight: bold;
-            position: relative;
-            padding: 0 0.5rem;
-        }
-        
-        .price-value.up {
-            color: var(--danger-color);
-        }
-        
-        .price-value.down {
-            color: var(--success-color);
-        }
-        
-        .price-value.up::after, .price-value.down::after {
-            font-family: "bootstrap-icons";
-            font-size: 0.8rem;
-            position: absolute;
-            margin-left: 5px;
-        }
-        
-        .price-value.up::after {
-            content: "\f13a";
-        }
-        
-        .price-value.down::after {
-            content: "\f13b";
-        }
-        
-        section {
-            margin-bottom: 0.5rem;
-            padding: 0.5rem;
-            background-color: white;
-            border-radius: 1rem;
-            box-shadow: var(--card-shadow);
-        }
-        
-h2 {
-    color: rgb(63 68 75);
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 0.6rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid rgba(22, 119, 255, 0.25);
-    display: inline-block;
-    position: relative;
-    letter-spacing: 0.03em;
-    transition: all 0.3s ease;
-}
-        .table {
-            border-radius: 1rem;
-            overflow: hidden;
-        }
-        
-        .table thead {
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            color: white;
-        }
-        
-        .table th, .table td {
-            vertical-align: middle;
-            padding: 0.8rem 1rem;
-        }
-        
-        .table-hover tbody tr:hover {
-            background-color: rgba(22, 93, 255, 0.04);
-        }
-        
-        .table-responsive {
-            border-radius: 1rem;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-        }
-        
-        .chart-container {
-            position: relative;
-            height: 350px;
-            width: 100%;
-        }
-        
-        footer {
-            margin-top: 1rem;
-            padding: 1rem 0;
-            background-color: white;
-            border-radius: 1rem 1rem 0 0;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .update-info {
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-        
-        .badge {
-            background-color: rgba(255, 107, 53, 0.1);
-            color: var(--accent-color);
-            font-weight: 500;
-            margin-left: 0.5rem;
-            padding: 0.2rem 0.5rem;
-        }
-
-        .article-card {
-            border: none;
-            border-radius: 1rem;
-            overflow: hidden;
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .article-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        }
-        
-        .article-img {
-            height: 180px;
-            object-fit: cover;
-            width: 100%;
-        }
-        
-        .article-content {
-            padding: 0.5rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .article-title {
-            font-weight: bold;
-            color: #333;
-            font-size: 1.6rem;
-            margin-bottom: 0.75rem;
-            transition: color var(--transition-speed);
-        }
-        
-        .article-card:hover .article-title {
-            color: var(--primary-color);
-        }
-        
-        .article-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: auto;
-            padding-top: 1rem;
-            border-top: 1px dashed #eee;
-        }
-        
-        .article-excerpt {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            margin-bottom: 1rem;
-        }
-        
-        .hot-tag {
-            background-color: rgba(245, 63, 63, 0.1);
-            color: var(--danger-color);
-            font-size: 1.5rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            margin-right: 0.5rem;
-        }
-        .nav-links {
-            margin: 1rem 0 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            transition: color var(--transition-speed);
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-        
-        .nav-links span {
-            display: block;
-            font-size: 0.8rem;
-            color: #dbc3c3;
-        }
-        .col-md-3{flex:0 0 auto;width:25%}
-        .col-md-9{flex:0 0 auto;width:75%}
-        .align-items-end{align-items:flex-end!important}
-        @media (max-width: 768px) {
-            .price-list-item {
-                font-size: 1rem;
-            }
-            
-            h2 {
-                font-size: 1.3rem;
-            }
-            
-            .chart-container {
-                height: 300px;
-            }
-            
-            .table th, .table td {
-                padding: 0.6rem 0.5rem;
-                font-size: 0.9rem;
-            }
-
-            .article-img {
-                height: 150px;
-            }
-        }
-        @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    })();
+    function toggleMobileMenu() {
+        var menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }</script> <main class="max-w-5xl mx-auto px-4 py-4"><section class="mb-8 hidden" id="favorites"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> ❤️ 我的收藏 </h2> <div id="favoritesGrid" class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 🧮 計算工具 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/percentage" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">100</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">百分比計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">快速解決各種百分比計算問題</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="percentage" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/circle-area" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⭕</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">圓面積計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算圓形面積，支持半徑、直徑、周長輸入</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="circle-area" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/cylinder" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🛢️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">圓柱體積計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算圓柱體積和表面積，帶3D可視化效果</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="cylinder" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/sphere" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔮</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">球體積計算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">輸入半徑或直徑，即時計算球體積與表面積</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="sphere" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/factors" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔢</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">因數計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算整數的所有因數和質因數分解</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="factors" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/fraction" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">½</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">分數計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">分數四則運算、通分、約分、混合運算</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="fraction" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/std-dev" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">σ</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">標準偏差計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算樣本標準偏差和總體標準偏差，支援統計分析</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="std-dev" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/mortgage" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🏠</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">台灣房貸計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算房貸月付款、利息總額、還款明細</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="mortgage" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/compound-interest" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">💰</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">複利計算機</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算複利投資回報。</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="compound-interest" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/depreciation" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📉</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">折舊計算機</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算資產折舊。</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="depreciation" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/date-calculator" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📅</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">日數計算機</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算兩個日期之間的天數。</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="date-calculator" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/brick" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🧱</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">磚塊計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算牆體所需磚塊數量，含門窗扣除和損耗</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="brick" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/tile" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔲</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">瓦片用量計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算鋪設瓦片所需數量，支持常見規格和自定義尺寸</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="tile" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/concrete" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🏗️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">混凝土計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算混凝土體積、水泥砂石用量</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="concrete" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/discount" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🏷️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">折扣計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算打折後價格、節省金額和折扣率</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="discount" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 🔄 單位換算 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/currency" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">💱</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">匯率換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">即時匯率換算，支援全球主要貨幣</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="currency" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/temperature" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🌡️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">溫度單位轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">攝氏、華氏、開爾文溫度單位即時換算</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="temperature" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/length" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📏</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">長度換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">長度單位即時換算，支持毫米、釐米、米、英寸等單位互轉</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="length" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/weight" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⚖️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">重量換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">公斤、磅、克、盎司等重量單位即時互轉</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="weight" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/area" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📐</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">面積換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">面積單位即時換算，支持公制、英制、土地單位互轉</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="area" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/data-size" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">💾</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">數據單位轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">B、KB、MB、GB、TB、PB 數據存儲單位即時換算</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="data-size" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/timezone-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🌍</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">時區轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">快速轉換全球各地時區時間</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="timezone-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/pressure" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔵</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">壓力單位換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">快速換算各種壓力單位</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="pressure" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/torque" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔧</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">扭矩單位換算</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">快速換算各種扭矩單位</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="torque" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 📝 文字處理 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/word-counter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">ABC</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">英語單詞計數器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">統計單詞數、元音、輔音、字符數量及詞頻分析</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="word-counter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/char-counter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">字</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">字數計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">統計中英文字數、標點符號、段落數、字節數</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="char-counter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/zh-convert" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">繁簡</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">繁簡轉換工具</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">繁體中文與簡體中文互相轉換</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="zh-convert" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/srt-to-txt" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📝</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">SRT 轉 TXT</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">SRT字幕文件轉換為純文本格式，去除時間戳和格式標記</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="srt-to-txt" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/md-to-html" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">MD</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Markdown ↔ HTML 互轉</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">Markdown 和 HTML 雙向轉換，支持實時預覽和語法高亮</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="md-to-html" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/text-diff" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📝</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">文字比較工具</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">比較兩段文字，找出差異</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="text-diff" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> ✨ 文字特效 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/strikethrough" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">✂️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">文字刪除線產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">為文字添加各種刪除線和下劃線效果</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="strikethrough" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/zalgo" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">👻</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Zalgo 文字產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">創建恐怖扭曲的 Zalgo 故障文字效果</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="zalgo" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/fancy-text" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">✨</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">酷炫文字產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將普通文字轉換為各種酷炫的 Unicode 字體風格</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="fancy-text" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/ig-fonts" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📸</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Instagram 字體產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">為您的 Instagram 個人檔案和貼文創建獨特的字體風格</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="ig-fonts" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="/emoji" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">😀</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Emoji 表情符號大全</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">搜尋、瀏覽並複製 Emoji 表情符號</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="emoji" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/emoji-picker" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📋</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Emoji 表情符號</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">點擊即可複製表情符號，支援 Facebook、Twitter、Instagram 等社群平台</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="emoji-picker" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 📁 格式轉換 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/latex-table" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📊</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">LaTeX 表格生成器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">可視化編輯表格，自動生成 LaTeX 代碼</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="latex-table" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/pdf-to-txt" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📄</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">PDF 轉 TXT 文字</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">從 PDF 文件中提取純文字內容</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="pdf-to-txt" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/txt-to-pdf" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📝</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">TXT 轉 PDF</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將純文字內容轉換為 PDF 文件</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="txt-to-pdf" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/txt-to-csv" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📄</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">TXT 轉 CSV</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將純文字檔案轉換為 CSV 格式，支持自訂分隔符</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="txt-to-csv" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/csv-to-json" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">{}</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">CSV 轉 JSON</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 CSV 表格數據轉換為 JSON 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="csv-to-json" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/csv-to-pdf" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📊</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">CSV 轉 PDF</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 CSV 表格數據轉換為 PDF 文件</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="csv-to-pdf" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/csv-to-excel" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📗</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">CSV 轉 Excel</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 CSV 表格數據轉換為 Excel 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="csv-to-excel" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/json-to-csv" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📋</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JSON 轉 CSV</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JSON 數據轉換為 CSV 表格格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="json-to-csv" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/json-to-yaml" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📄</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JSON 轉 YAML</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JSON 數據轉換為 YAML 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="json-to-yaml" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/json-to-excel" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📊</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JSON 轉 Excel</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JSON 數據轉換為 Excel 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="json-to-excel" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/json-to-csharp" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔷</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JSON 轉 C# 類別</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JSON 數據轉換為 C# 類別定義</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="json-to-csharp" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/json-to-string" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">💬</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JSON 轉字串</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JSON 轉換為程式語言中的字串格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="json-to-string" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 🖼️ 圖片轉換 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/svg-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🖼️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">SVG 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 SVG 圖片轉換為 PNG、JPG 或 ICO 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="svg-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/heic-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📱</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">HEIC 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 HEIC/HEIF 圖片轉換為 JPG 或 PNG 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="heic-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/webp-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🖼️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">WebP 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 WebP 圖片轉換為 PNG、JPG、GIF 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="webp-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/png-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🖼️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">PNG 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 PNG 圖片轉換為 JPG、ICO、GIF、WebP 等格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="png-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/jpg-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🖼️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">JPG 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 JPG 圖片轉換為 PNG、WebP、SVG 等格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="jpg-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/video-to-mp3" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎵</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">視頻轉 MP3</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">從本地視頻文件提取音頻，轉換為 MP3 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="video-to-mp3" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/m4a-converter" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎧</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">M4A 轉換器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將 M4A 音頻文件轉換為 MP3 或 WAV 格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="m4a-converter" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/video-to-livephoto" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📸</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">視頻轉 Live Photo</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將視頻轉換為 iPhone Live Photo 動態照片格式</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="video-to-livephoto" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/photo-collage" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🖼️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">照片拼貼畫製作器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將多張照片組合成精美的拼貼畫</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="photo-collage" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 💚 健康計算 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/bmi" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⚖️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">體重健康計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算 BMI、理想體重、基礎代謝率和每日熱量需求</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="bmi" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/bmr" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔥</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">BMR 基礎代謝率計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算基礎代謝率、每日熱量消耗和營養素需求</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="bmr" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/body-fat" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📊</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">體脂率計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">計算體脂肪百分比、瘦體重和脂肪重量</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="body-fat" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/ideal-weight" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⚖️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">理想體重計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">使用多種科學公式計算您的理想體重範圍</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="ideal-weight" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/age" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎂</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">年齡計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">精確計算年齡、生活天數和各種時間統計</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="age" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/dog-age" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🐕</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">狗狗年齡計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將狗狗年齡換算成人類年齡，了解毛孩的真實年紀</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="dog-age" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/cat-age" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🐱</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">貓咪年齡計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將貓咪年齡換算成人類年齡，了解喵星人的真實年紀</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="cat-age" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/period-calculator" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🩸</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">月經週期計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">預測月經日期、排卵期和易孕期</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="period-calculator" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/zodiac" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⭐</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">星座計算器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">根據出生日期和時間計算太陽星座、月亮星座和上升星座</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="zodiac" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 🛠️ 生活工具 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/tw-time" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🕐</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">台灣時間</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">精準顯示台灣標準時間 (UTC+8)</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="tw-time" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/countdown" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⏱️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">倒數計時器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">設定時間，開始倒數計時</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="countdown" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/oil-price" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">⛽</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">油價走勢圖</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">台灣中油、台塑油價走勢與歷史數據</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="oil-price" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/ruler" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📐</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">線上量尺</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">實際大小的螢幕量尺，可測量物品尺寸</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="ruler" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/metric-thread" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔩</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">公制螺紋規格表</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">ISO 公制螺紋規格查詢，包含粗牙和細牙螺紋數據</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="metric-thread" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/qrcode" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📱</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">QR Code 產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">輸入內容，即時產生 QR Code</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="qrcode" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/ping-test" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📡</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">Ping 測試</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">測試網路延遲、丟包率和連線品質</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="ping-test" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/m3u8-player" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">▶️</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">M3U8 播放器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">免費 M3U8 流媒體在線播放器，支持 HLS 直播流和點播流播放</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="m3u8-player" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/m3u8-downloader" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">📥</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">M3U8 下載器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">在線下載 M3U8 流媒體。</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="m3u8-downloader" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/tarot" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🔮</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">塔羅牌占卜</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">抽取塔羅牌，獲得指引與啟示</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="tarot" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/scoreboard" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🏆</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">記分板</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">免費線上記分板，適用於體育比賽和各種遊戲</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="scoreboard" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/birthday-card" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎂</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">生日賀卡產生器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">創建精美的個性化生日賀卡</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="birthday-card" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <section class="mb-8"><h2 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"> 🎮 娛樂工具 </h2> <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/random-number" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎲</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">隨機數生成器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">生成指定範圍內的隨機數字</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="random-number" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/dice" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎲</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">骰子模擬器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">逼真 3D 骰子滾動效果，支援多顆骰子同時投擲</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="dice" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/wheel" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎡</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">隨機抽籤輪盤</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">輸入選項，轉動轉盤隨機選擇</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="wheel" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/lottery" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">🎲</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">隨機抽籤器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">輸入選項，隨機抽取結果</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="lottery" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/team-generator" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">👥</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">隨機組隊工具</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">將成員隨機分配到指定數量的隊伍中</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="team-generator" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div> <div class="relative group bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition"><a href="https://www.886life.com/tools/name-generator" class="block"><div class="flex items-start gap-3"><span class="w-9 h-9 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center text-lg flex-shrink-0">👤</span> <div class="min-w-0 pr-6"><h3 class="font-medium text-gray-900 dark:text-gray-100">姓名生成器</h3> <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">隨機生成中文和英文姓名，支援多種風格與字數選擇</div></div></a> <button class="fav-btn absolute top-3 right-3 p-1.5 rounded-full transition text-gray-300 hover:text-red-400" data-tool="name-generator" data-fav="0" aria-label="Add to favorites" title="Add to favorites"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button></div></div></section> <script>(function() {
+    var favBtns = document.querySelectorAll('.fav-btn');
+    var favSection = document.getElementById('favorites');
+    var favGrid = document.getElementById('favoritesGrid');
+    var loginUrl = '/login';
+    function getToolDataFromDOM(slug) {
+        var btn = document.querySelector('.fav-btn[data-tool="' + slug + '"]');
+        if (!btn) return null;
+        var card = btn.closest('.relative');
+        if (!card) return null;
+        var link = card.querySelector('a');
+        var icon = card.querySelector('.w-9');
+        var h3 = card.querySelector('h3');
+        var p = card.querySelector('p');
+        return {
+            slug: slug,
+            url: link ? link.getAttribute('href') : '#',
+            tag: icon ? icon.textContent.trim() : '',
+            name: h3 ? h3.textContent : '',
+            desc: p ? p.textContent : ''
+        };
     }
-}
-    </style>
-</head>
-<body>
-
-    <header class="text-center">
-  
-        <h1 class="display-5 mb-2">886LiFe</h1>
-        <div class="nav-links">
-            <a href="/">
-                <i class="bi bi-house me-1"></i>首頁
-                <span>Home</span>
-            </a>
-            <a href="about.html">
-                <i class="bi bi-info-circle me-1"></i>關於我們
-                <span>About Us</span>
-            </a>
-            <a href="contact.html">
-                <i class="bi bi-envelope me-1"></i>聯絡我們
-                <span>Contact</span>
-            </a>
-            <a href="privacy.html">
-                <i class="bi bi-shield-lock me-1"></i>隱私政策
-                <span>Privacy Policy</span>
-            </a>
-            <a href="terms.html">
-                <i class="bi bi-file-text me-1"></i>服務條款
-                <span>Terms of Service</span>
-            </a>
-        </div>
-    </header>
-
-    <div class="container">
-<section>
-            <h2><i class="bi bi-gas-pump-fill me-2"></i>最新油價</h2>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="card shadow-sm price-card">
-                        <h5><i class="bi bi-building"></i> 台灣中油 (CPC)</h5>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li class="price-list-item">
-                                    <span>92無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a92-container"><span id="latest-a92">27.3</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>95無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a95-container"><span id="latest-a95">28.8</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>98無鉛汽油</span>
-                                    <span class="price-value up" id="latest-a98-container"><span id="latest-a98">30.8</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>超級柴油</span>
-                                    <span class="price-value up" id="latest-achai-container"><span id="latest-achai">26.2</span> 元/公升</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card shadow-sm price-card">
-                        <h5><i class="bi bi-building"></i> 台塑石化 (Formosa)</h5>
-                        <div class="card-body">
-                             <ul class="list-unstyled">
-                                <li class="price-list-item">
-                                    <span>92+無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b92-container"><span id="latest-b92">27.3</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>95+無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b95-container"><span id="latest-b95">28.8</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>98無鉛汽油</span>
-                                    <span class="price-value up" id="latest-b98-container"><span id="latest-b98">30.8</span> 元/公升</span>
-                                </li>
-                                <li class="price-list-item">
-                                    <span>超級柴油</span>
-                                    <span class="price-value up" id="latest-bchai-container"><span id="latest-bchai">26.0</span> 元/公升</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-<ins class="adsbygoogle"
-     style="display:block;height:120px;max-width:1300px;"
-     data-ad-client="ca-pub-8992771175158812"
-     data-ad-slot="7247913518"></ins>
-            </div>
-       
-        </section>
-   <section>
-            <h2><i class="bi bi-envelope me-2"></i>ᴛᴀɪᴘᴇɪ ᴢɪᴘ</h2>
-            <div class="row g-4">
-
-
-
-
-<div class="col-md-4">
-          <label for="city" class="form-label">第一步：選擇省份</label>
-          <select id="city" class="form-select">
-            <option value="">請選擇省份</option>
-            <option value="1">臺北市</option>
-            <option value="2">基隆市</option>
-            <option value="3">新北市</option>
-            <option value="4">連江縣</option>
-            <option value="5">宜蘭縣</option>
-            <option value="6">新竹市</option>
-            <option value="7">新竹縣</option>
-            <option value="8">桃園市</option>
-            <option value="9">苗栗縣</option>
-            <option value="10">臺中市</option>
-            <option value="11">彰化縣</option>
-            <option value="12">南投縣</option>
-            <option value="13">嘉義市</option>
-            <option value="14">嘉義縣</option>
-            <option value="15">雲林縣</option>
-            <option value="16">臺南市</option>
-            <option value="17">高雄市</option>
-            <option value="18">南海諸</option>
-            <option value="19">澎湖縣</option>
-            <option value="20">金門縣</option>
-            <option value="21">屏東縣</option>
-            <option value="22">臺東縣</option>
-            <option value="23">花蓮縣</option>
-          </select>
-
-</div>
-      <div class="col-md-4">
-        <div class="mb-3">
-          <label for="area" class="form-label">第二步：選擇城市</label>
-          <select id="area" class="form-select" disabled>
-            <option value="">請選擇省份</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="mb-3">
-          <label for="road" class="form-label">第三步：選擇區縣</label>
-          <select id="road" class="form-select" disabled>
-            <option value="">請先選擇省份</option>
-          </select>
-        </div>
-      </div>
-
-      <div id="result-container" class="d-none">
-    <div class="card border-success">
-        <div class="card-header bg-success text-white">
-            <h3 class="card-title mb-0">
- 查詢結果
-            </h3>
-        </div>
-        <div id="zipcode-list" class="list-group list-group-flush">
-        </div>
-    </div>
-</div>
     
-<div id="loading" style="display: none;">
- 正在加載數據...
-</div>
-<div id="empty-state" class="alert alert-warning alert-dismissible fade show" role="alert" style="display: none;">
-  沒有找到匹配的數據
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<div id="error-state" class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
-  加載數據時出錯，請稍後重試
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-  
-  </div>
-        </section> 
-<section id="url-shortener">
-    <h2><i class="bi bi-link-45deg me-2"></i>sʜᴏʀᴛ ʟɪɴᴋ</h2>
-    <div class="row g-4">
-        <div class="col-12">
-
-
-                <div class="card-body">
-                    <form id="urlForm" class="row g-3 align-items-center">
-                        <div class="col-md-9">
-                            <div class="input-group">
-                                <input type="url" class="form-control" id="url" 
-                                       placeholder="https://www.886life.com" required>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-3">
-                            <button type="submit" class="btn btn-primary w-100">
-                                <i class="bi bi-compress me-1"></i> 生成
-                            </button>
-                        </div>
-                    </form>
-                    
-                    <div id="urlLoading" class="loading mt-3">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">加載中...</span>
-                        </div>
-                        <p class="mt-2 text-muted">正在生成短連結...</p>
-                    </div>
-                    
-                    <div id="urlError" class="error alert alert-danger mt-3">
-                        <i class="bi bi-exclamation-circle me-2"></i>
-                        <span id="urlErrorMessage"></span>
-                    </div>
-                    
-                    <div id="urlResult" class="result alert alert-success mt-3">
-                        <h5 class="alert-heading"><i class="bi bi-check-circle me-2"></i>生成成功</h5>
-                        短連結: 
-                        <div class="input-group mt-2">
-                            <input type="text" id="shortUrl" class="form-control" readonly>
-                            <button class="btn btn-outline-secondary" id="copyBtn">
-                                <i class="bi bi-clipboard"></i> 複製
-                            </button>
-                            <a id="visitBtn" href="#" target="_blank" class="btn btn-outline-primary">
-                                <i class="bi bi-box-arrow-up-right"></i> 訪問
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-</section>
+    function renderFavorites(favorites) {
+        if (!favSection || !favGrid) return;
+        if (favorites.length === 0) {
+            favSection.classList.add('hidden');
+            return;
+        }
+        
+        var html = '';
+        favorites.forEach(function(slug) {
+            var tool = getToolDataFromDOM(slug);
+            if (tool) {
+                html += '<a href="' + tool.url + '" class="block bg-white dark:bg-gray-800 rounded-lg p-4 border border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 hover:shadow-sm transition">' +
+                    '<div class="flex items-start gap-3">' +
+                        '<span class="w-9 h-9 bg-red-50 dark:bg-red-900/30 text-red-500 rounded-lg flex items-center justify-center text-lg flex-shrink-0">' + tool.tag + '<\/span>' +
+                        '<div class="min-w-0">' +
+                            '<h3 class="font-medium text-gray-900 dark:text-gray-100">' + tool.name + '<\/h3>' +
+                            '<p class="text-gray-500 dark:text-gray-400 text-sm mt-1">' + tool.desc + '<\/p>' +
+                        '<\/div>' +
+                    '<\/div>' +
+                '<\/a>';
+            }
+        });
+        
+        favGrid.innerHTML = html;
+        favSection.classList.remove('hidden');
+    }
     
-        <section>
-            <h2><i class="bi bi-newspaper me-2"></i>ɢᴀᴅɢᴇᴛ</h2>
- <div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-        <a href="https://zip.886life.com" class="text-decoration-none">
-            <div class="card shadow-sm article-card">
-                <div class="article-content">
-                    <h5 class="article-title"><span class="hot-tag">郵編</span>台灣郵編查詢</h5>
-                    <p class="article-excerpt">提供全面、準確的台灣郵政編碼查詢服務，覆蓋所有行政區域，幫助您快速找到所需地區的郵政編碼。</p>
-   
-                </div>
-            </div>
-        </a>
-    </div>
-
-                           <div class="col-md-6 col-lg-4">
-                     <a href="https://instagram.886life.com/tw/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">字體</span>
-                                Instagram 字體工具
-                            </h5>
-                            <p class="article-excerpt">在第一個框中輸入文本後，文本生成器將實時將其轉換為多種字體樣式。</p>
-                       
-                        </div>
-                    </div></a>
-                </div>
-                   <div class="col-md-6 col-lg-4">
-                    <a href="https://random-wheel.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">輪盤</span>
-                                Random Wheel
-                            </h5>
-                            <p class="article-excerpt">Experience realistic 3D rolling effects and the fun of randomness</p>
-                    
-                        </div>
-                    </div></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://rili.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">日曆</span>
-                                農曆日曆
-                            </h5>
-                            <p class="article-excerpt">農曆日曆查詢工具 | 提供詳細的農曆、節氣、宜忌等信息。</p>
-                      
-                        </div>
-                    </div></a>
-                </div>
-                     
-                   <div class="col-md-6 col-lg-4">
-                    <a href="https://time.886life.com/tw/taipei/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">時間</span>臺灣省台北時間</h5>
-                            <p class="article-excerpt">台灣採用單一時區，稱為國家標準時間或台灣時間。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-
-                 <div class="col-md-6 col-lg-4">
-                    <a href="https://emoji.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">符號</span>
-                               emoji 符號
-                            </h5>
-                            <p class="article-excerpt">All iOS devices, Android 4.4+, and Windows 8.1+ can display colorful emojis natively.</p>
-                        
-                        </div>
-                    </div></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://x-symbols.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">符號</span>
-                               facebook 符號
-                            </h5>
-                            <p class="article-excerpt">只需單擊一個圖示即可將表情符號複製到剪貼簿。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                
-                      <div class="col-md-6 col-lg-4">
-                    <a href="https://cool-text.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">酷文</span>
-                               酷文字產生器
-                            </h5>
-                            <p class="article-excerpt">探索我們的字體生成器，這是一個創建時尚獨特文字的終極線上工具！</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                 <div class="col-md-6 col-lg-4">
-                    <a href="https://random-dice.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">骰子</span>
-                               骰子模擬器
-                            </h5>
-                            <p class="article-excerpt">體驗逼真的3D滾動效果，感受隨機的樂趣</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                        <div class="col-md-6 col-lg-4">
-                    <a href="https://symbol.886life.com/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">符號</span>
-                               ✪符號大全
-                            </h5>
-                            <p class="article-excerpt">這裡收集了各種分類的特殊符號，點擊符號即可複製。</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                  <div class="col-md-6 col-lg-4">
-                    <a href="https://100.886life.com/tw/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">100</span>
-                               百分比計算器
-                            </h5>
-                            <p class="article-excerpt">百分比計算器是一款實用的線上工具，可幫助您快速解決各種百分比計算問題。</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                         <div class="col-md-6 col-lg-4">
-                    <a href="https://unit.886life.com/tw/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">單位</span>
-                               單位換算器
-                            </h5>
-                            <p class="article-excerpt">免費的多功能單位換算器，支援長度、重量、溫度、體積、面積、資料等單位轉換。</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                          <div class="col-md-6 col-lg-4">
-                    <a href="https://textcount.886life.com/zh-hant/analyzer/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">計數</span>
-                               英語單字計數
-                            </h5>
-                            <p class="article-excerpt">統計英文文本中的總詞數、獨特單字數量、母音與子音個數，並生成可排序的詞頻表。</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                          <div class="col-md-6 col-lg-4">
-                    <a href="https://textcount.886life.com/zh-hant/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">字數</span>
-                               字數計算文字計算
-                            </h5>
-                            <p class="article-excerpt">統計總字符數、中文字符、英文單字、標點符號等，適合寫作、翻譯、排版與文本分析。</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                                <div class="col-md-6 col-lg-4">
-                    <a href="https://table.886life.com/zh-hant/" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title">
-                                <span class="hot-tag">在線</span>
-                               表格生成器
-                            </h5>
-                            <p class="article-excerpt">在線表格生成器，支持 Markdown、HTML、文本和 LaTeX 格式</p>
-                   
-                        </div>
-                    </div></a>
-                </div>
-                <ins class="adsbygoogle"
-     style="display:block;height:120px;max-width:1300px;"
-     data-ad-client="ca-pub-8992771175158812"
-     data-ad-slot="6047443067"></ins>
-            </div>
-        </section>
-        
-        <section>
-            <h2><i class="bi bi-newspaper me-2"></i>MiNi Tools</h2>
- <div class="row g-4">
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/circle_area.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>圓面積</h5>
-<p class="article-excerpt">計算圓形面積，支持半徑、直徑、周長輸入，帶SVG可視化圖表。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/metric_thread.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">查詢</span>公制螺紋</h5>
-<p class="article-excerpt">ISO公制螺紋規格查詢表，支持篩選功能和參數對比。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/length_conversion.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">換算</span>長度換算</h5>
-<p class="article-excerpt">長度單位即時換算，支持毫米、釐米、米、英寸互轉。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/cylinder_volume.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>圓柱體積</h5>
-<p class="article-excerpt">圓柱體積和表面積計算器，帶3D可視化效果圖。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/factor_calculator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>因數計算</h5>
-<p class="article-excerpt">計算整數的所有因數和質因數分解，支持質數判斷。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/fraction_calculator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>分數計算</h5>
-<p class="article-excerpt">分數四則運算計算器，支持通分、約分和混合運算。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/astrology_calculator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">查詢</span>星座計算</h5>
-<p class="article-excerpt">根據出生時間和地點計算太陽、月亮和上升星座。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/std_deviation.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">統計</span>標準偏差</h5>
-<p class="article-excerpt">高精度標準偏差計算器，支持樣本和總體標準偏差。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/name_generator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">生成</span>姓名生成</h5>
-<p class="article-excerpt">隨機中文姓名生成器，支持不同風格和字數選擇。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/proportion_calculator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>比例計算</h5>
-<p class="article-excerpt">比例計算器，解決 a:b = c:x 類型的比例問題。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/age_calculator.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">計算</span>年齡計算</h5>
-<p class="article-excerpt">精確計算年齡、生活天數和各種時間統計信息。</p>
-</div>
-</div>
-</a>
-</div>
-<div class="col-md-6 col-lg-4">
-<a href="https://www.886life.com/tools/mtool/srt_to_txt.php?lang=zh-hant" class="text-decoration-none">
-<div class="card shadow-sm article-card">
-<div class="article-content">
-<h5 class="article-title"><span class="hot-tag">轉換</span>SRT轉TXT</h5>
-<p class="article-excerpt">SRT字幕文件轉換為純文本格式，去除時間戳和格式標記。</p>
-</div>
-</div>
-</a>
-</div>
-            </div>
-        </section>
-        
-<section>
-            <h2><i class="bi bi-newspaper me-2"></i>ʟɪғᴇ</h2>
- <div class="row g-4">
-
-
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/fangdai.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">房貸</span>房貸計算器</h5>
-                            <p class="article-excerpt">使用房貸計算器輕鬆計算台灣房貸的每月還款金額，支援貸款總金額、貸款年限、利率等多種設。</p>
-                
-                        </div>
-                    </div> </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/youjia.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">油價</span>最新油價資訊與走勢圖</h5>
-                            <p class="article-excerpt">提供最新的油價資訊及走勢圖，讓您了解全球及台灣油價波動，輕鬆掌握油價變化趨勢，協助您做出最佳的加油決策。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                  <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/wordcount.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">計數</span>文字計數工具</h5>
-                            <p class="article-excerpt">多功能文字統計與處理工具，支持多種統計維度和段落整理。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/gbk-big5-gb2312-utf8.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">繁簡</span>繁簡轉換工具</h5>
-                            <p class="article-excerpt">簡體轉繁體、繁體轉簡體，支持GBK與BIG5編碼互轉。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                
-
-            </div>
-        </section>
-
-        <section>
-            <h2><i class="bi bi-newspaper me-2"></i>sᴄʜᴏᴏʟ</h2>
- <div class="row g-4">
-
-<div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/lever/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">教學</span>槓桿原理教學演示</h5>
-                            <p class="article-excerpt">通過互動演示，幫助學生了解三類槓桿的結構及工作原理。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-               
-                
-        <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/solar/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">天體</span>太陽系天體運動模擬器</h5>
-                            <p class="article-excerpt">讓小學生輕鬆理解太陽、地球和月亮的運動規律。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-         <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/laser/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">雷射</span>雷射折射模擬器</h5>
-                            <p class="article-excerpt">雷射折射模擬器幫助學生觀察雷射從空氣射入水中時的折射與全反射現象。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                  <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/convex-lens/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">凸透镜</span>凸透镜成像原理模拟器</h5>
-                            <p class="article-excerpt">探索凸透镜如何影响成像的性质。适合物理课堂和光学科普教学。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                    <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/mean-vs-median/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">理解</span>平均數 vs 中位數</h5>
-                            <p class="article-excerpt">深入理解平均數與中位數的區別，以及它們在不同數據分布中的表現。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                    <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/pythagorean-theorem/tw.html" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">演示</span>勾股定理互動演示</h5>
-                            <p class="article-excerpt">通過互動演示，探索勾股定理中直角三角形三條邊的關係。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                       <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/algebra/quadratic-equation.php" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">計算</span>一元二次方程式計算機</h5>
-                            <p class="article-excerpt">一元二次方程式是數學中的基本概念，標準形式為 ax² + bx + c = 0，其中 a ≠ 0。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                         <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/algebra/twovar.php" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">計算</span>二元一次方程式計算機</h5>
-                            <p class="article-excerpt">二元一次方程組是包含兩個未知數的線性方程組，標準形式為：a₁x + b₁y = c₁ 和 a₂x + b₂y = c₂</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-                      <div class="col-md-6 col-lg-4">
-                    <a href="https://www.886life.com/tools/mtool/numbers/exponential-power.php" class="text-decoration-none">
-                    <div class="card shadow-sm article-card">
-                        <div class="article-content">
-                            <h5 class="article-title"><span class="hot-tag">計算</span>任意N次方程式計算機</h5>
-                            <p class="article-excerpt">N次多項式方程是代數方程的一般形式，包含最高次項為xⁿ的項。</p>
-                     
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-        </section>
-    </div>
-<div id="privacy-banner" style="position:fixed;right:1rem;bottom:1rem;background:#fff;color:#333;border:1px solid #ccc;border-radius:.75rem;box-shadow:0 4px 12px rgba(0,0,0,.1);max-width:300px;z-index:9999;padding:1rem;font-size:.9rem;display:none"><p style="margin-bottom:.5rem">本網站使用 Cookie 以提升使用體驗，詳情請參閱<a href="/privacy.html" target="_blank" style="color:var(--primary-color);text-decoration:underline">隱私政策</a>。</p><button id="accept-privacy-btn" style="background-color:var(--primary-color);color:#fff;border:none;border-radius:.5rem;padding:.4rem 1rem;cursor:pointer">我接受</button></div>
-    <footer class="text-center text-muted">
-        <p class="mt-1 small">886LiFe Free Tools</p>
-    </footer>
-<script type="99a782b97c71649eff8d5453-text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem("privacyAccepted")) {
-      document.getElementById("privacy-banner").style.display = "block";
+    function updateFavButtons(favorites) {
+        favBtns.forEach(function(btn) {
+            var tool = btn.getAttribute('data-tool');
+            var isFav = favorites.indexOf(tool) !== -1;
+            btn.setAttribute('data-fav', isFav ? '1' : '0');
+            btn.className = 'fav-btn absolute top-3 right-3 p-1.5 rounded-full transition ' + (isFav ? 'text-red-500' : 'text-gray-300 hover:text-red-400');
+            btn.querySelector('svg').setAttribute('fill', isFav ? 'currentColor' : 'none');
+        });
     }
-
-    document.getElementById("accept-privacy-btn").addEventListener("click", function () {
-      localStorage.setItem("privacyAccepted", "true");
-      document.getElementById("privacy-banner").style.display = "none";
-    });
-  });
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="99a782b97c71649eff8d5453-text/javascript"></script>
-<script type="99a782b97c71649eff8d5453-text/javascript">
-$(document).ready(function() {
-  if ($('#city').length) {
-    const language = 'zh';
-
-    const citySelect = $('#city');
-    const areaSelect = $('#area');
-    const roadSelect = $('#road');
-    const resultContainer = $('#result-container');
-    const zipcodeList = $('#zipcode-list');
-    const loading = $('#loading');
-    const emptyState = $('#empty-state');
-    const errorState = $('#error-state');
-
-    function resetUI() {
-      resultContainer.addClass('d-none');
-      emptyState.addClass('d-none');
-      errorState.addClass('d-none').text('加載數據時出錯，請稍後重試');
-      loading.addClass('d-none');
+    var FAV_CACHE_KEY = '_favorites';
+    var FAV_CACHE_TTL = 3600000; 
+    
+    function getFavCache() {
+        try {
+            var cached = localStorage.getItem(FAV_CACHE_KEY);
+            if (cached) {
+                var data = JSON.parse(cached);
+                if (Date.now() - data.time < FAV_CACHE_TTL) return data.favorites;
+            }
+        } catch(e) {}
+        return null;
     }
-
-    citySelect.on('change', function() {
-      const cityId = $(this).val().trim();
-
-      resetUI();
-      areaSelect.html(`<option value="">請選擇省份</option>`).prop('disabled', true);
-      roadSelect.html(`<option value="">請先選擇城市</option>`).prop('disabled', true);
-
-      if (!cityId) return;
-
-      loading.removeClass('d-none');
-
-      $.getJSON(`https://www.886life.com/zip/api.php`, {
-          action: 'get_areas',
-          city_id: cityId,
-          lang: language
-        })
-        .done(function(data) {
-          if (data && data.error) {
-            errorState.text(data.error).removeClass('d-none');
-            return;
-          }
-
-          if (!data || data.length === 0) {
-            areaSelect.html(`<option value="">沒有找到匹配的數據</option>`);
-            return;
-          }
-
-          areaSelect.empty().prop('disabled', false);
-          areaSelect.append(`<option value="">第二步：選擇城市</option>`);
-
-          data.forEach(area => {
-            areaSelect.append(`<option value="${area.id}">${area.name}</option>`);
-          });
-        })
-        .fail(function(xhr, status, error) {
-          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
-        })
-        .always(function() {
-          loading.addClass('d-none');
+    
+    function setFavCache(favorites) {
+        try {
+            localStorage.setItem(FAV_CACHE_KEY, JSON.stringify({ favorites: favorites, time: Date.now() }));
+        } catch(e) {}
+    }
+    
+    function clearFavCache() {
+        try { localStorage.removeItem(FAV_CACHE_KEY); } catch(e) {}
+    }
+    var cachedFavs = getFavCache();
+    var isLoggedIn = document.cookie.indexOf('user_state=') !== -1;
+    
+    if (cachedFavs) {
+        updateFavButtons(cachedFavs);
+        renderFavorites(cachedFavs);
+    } else if (isLoggedIn) {
+        fetch('/api/favorite/list?_t=' + Date.now(), { credentials: 'same-origin' })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success && data.favorites) {
+                    setFavCache(data.favorites);
+                    updateFavButtons(data.favorites);
+                    renderFavorites(data.favorites);
+                }
+            })
+            .catch(function() {});
+    }
+    favBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var tool = this.getAttribute('data-tool');
+            var self = this;
+            
+            fetch('/api/favorite/toggle', {
+                method: 'POST',
+                body: new URLSearchParams({ tool: tool }),
+                credentials: 'same-origin'
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success) {
+                    self.setAttribute('data-fav', data.favorited ? '1' : '0');
+                    self.className = 'fav-btn absolute top-3 right-3 p-1.5 rounded-full transition ' + (data.favorited ? 'text-red-500' : 'text-gray-300 hover:text-red-400');
+                    self.querySelector('svg').setAttribute('fill', data.favorited ? 'currentColor' : 'none');
+                    var cached = getFavCache() || [];
+                    if (data.favorited) {
+                        if (cached.indexOf(tool) === -1) cached.push(tool);
+                    } else {
+                        cached = cached.filter(function(t) { return t !== tool; });
+                    }
+                    setFavCache(cached);
+                    renderFavorites(cached);
+                } else if (data.error === 'not_logged_in') {
+                    location.href = loginUrl + '?redirect=' + encodeURIComponent(location.pathname);
+                }
+            });
         });
     });
-
-    areaSelect.on('change', function() {
-      const areaId = $(this).val().trim();
-
-      resetUI();
-      roadSelect.html(`<option value="">請先選擇城市</option>`).prop('disabled', true);
-
-      if (!areaId) return;
-
-      loading.removeClass('d-none');
-
-      $.getJSON(`https://www.886life.com/zip/api.php`, {
-          action: 'get_roads',
-          area_id: areaId,
-          lang: language
-        })
-        .done(function(data) {
-          if (data && data.error) {
-            errorState.text(data.error).removeClass('d-none');
-            return;
-          }
-
-          if (!data || data.length === 0) {
-            roadSelect.html(`<option value="">沒有找到匹配的數據</option>`);
-            return;
-          }
-
-          roadSelect.empty().prop('disabled', false);
-          roadSelect.append(`<option value="">第三步：選擇區縣</option>`);
-
-          data.forEach(road => {
-            roadSelect.append(`<option value="${road.id}">${road.name}</option>`);
-          });
-        })
-        .fail(function(xhr, status, error) {
-          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
-        })
-        .always(function() {
-          loading.addClass('d-none');
-        });
+})();</script></main> <footer class="bg-white border-t border-gray-200 mt-12 py-6"><div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-500"><p class="mb-2">886LiFe · 免費線上工具集合 <div class="flex justify-center gap-4"><a href="/about" class="hover:text-gray-700">關於我們</a> <a href="/contact" class="hover:text-gray-700">聯繫我們</a> <a href="/privacy" class="hover:text-gray-700">隱私政策</a></div></div></footer> <a id="kofiBtn" href="https://ko-fi.com/886life" target="_blank" rel="noopener" class="fixed right-4 bottom-20 z-40 bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-full shadow-lg flex items-center gap-2 transition-transform hover:scale-105"><svg class="w-5 h-5" viewbox="0 0 24 24" fill="currentColor"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311z"></path></svg> <span class="text-sm font-medium">Buy me a Coffee</span></a> <script>function openLangModal() {
+        document.getElementById('langModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLangModal() {
+        document.getElementById('langModal').classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLangModal(); });
+    function toggleTheme() {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+    function toggleUserMenu() {
+        var dropdown = document.getElementById('userDropdown');
+        if (dropdown) dropdown.classList.toggle('hidden');
+    }
+    document.addEventListener('click', function(e) {
+        var menu = document.getElementById('userMenu');
+        var dropdown = document.getElementById('userDropdown');
+        if (menu && dropdown && !menu.contains(e.target)) {
+            dropdown.classList.add('hidden');
+        }
     });
-
-    roadSelect.on('change', function() {
-      const roadId = $(this).val().trim();
-
-      resetUI();
-
-      if (!roadId) return;
-
-      loading.removeClass('d-none');
-
-      $.getJSON(`https://www.886life.com/zip/api.php`, {
-          action: 'get_zipcodes',
-          road_id: roadId,
-          lang: language
-        })
-        .done(function(data) {
-          if (data && data.error) {
-            errorState.text(data.error).removeClass('d-none');
-            return;
-          }
-
-          if (!data || data.length === 0) {
-            emptyState.removeClass('d-none');
-            return;
-          }
-
-          zipcodeList.empty();
-          data.forEach(zipcode => {
-            zipcodeList.append(`
-              <a href="https://zip.886life.com/zipcode-${zipcode.id}.html" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">
-                    <i class="fa fa-map-pin me-1"></i> ${zipcode.zipcode}
-                  </h5>
-                  <span class="badge bg-info text-white">${zipcode.department}</span>
-                </div>
-                <p class="mb-1">
-                  ${zipcode.city_name} ${zipcode.area_name} ${zipcode.road_name}
-                </p>
-                <small class="text-muted">
-                  <i class="fa fa-info-circle me-1"></i> ${zipcode.scope}
-                </small>
-              </a>
-            `);
-          });
-
-          resultContainer.removeClass('d-none');
-        })
-        .fail(function(xhr, status, error) {
-          errorState.text(`加載數據時出錯，請稍後重試: ${error}`).removeClass('d-none');
-        })
-        .always(function() {
-          loading.addClass('d-none');
-        });
-    });
-  }
-});
-</script>
-
-<script type="99a782b97c71649eff8d5453-text/javascript">
-$(document).ready(function(){const urlForm=document.getElementById('urlForm');const urlInput=document.getElementById('url');const loading=document.getElementById('urlLoading');const result=document.getElementById('urlResult');const error=document.getElementById('urlError');const errorMessage=document.getElementById('urlErrorMessage');const shortUrlInput=document.getElementById('shortUrl');const copyBtn=document.getElementById('copyBtn');const visitBtn=document.getElementById('visitBtn');const ENCODED_API_ENDPOINT='aHR0cHM6Ly96em4ubWUvdXJsL2FwaS5waHA=';const ENCODED_API_KEY='eW91cl9zZWN1cmVfYXBpX2tleV8xMjM=';const API_ENDPOINT=atob(ENCODED_API_ENDPOINT);const FIXED_API_KEY=atob(ENCODED_API_KEY);const DEFAULT_REDIRECT_TYPE=1;loading.style.display='none';result.style.display='none';error.style.display='none';urlForm.addEventListener('submit',async function(e){e.preventDefault();const url=urlInput.value;loading.style.display='block';result.style.display='none';error.style.display='none';try{const response=await fetch(API_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json',},body:JSON.stringify({api_key:FIXED_API_KEY,url:url,redirect_type:DEFAULT_REDIRECT_TYPE})});const data=await response.json();if(data.success){shortUrlInput.value=data.data.short_url;visitBtn.href=data.data.short_url;loading.style.display='none';result.style.display='block'}else{throw new Error(data.message||'生成短連結失敗');}}catch(err){loading.style.display='none';errorMessage.textContent=err.message;error.style.display='block'}});copyBtn.addEventListener('click',function(){shortUrlInput.select();document.execCommand('copy');const originalText=copyBtn.innerHTML;copyBtn.innerHTML='<i class="bi bi-check"></i> 已複製';copyBtn.classList.remove('btn-outline-secondary');copyBtn.classList.add('btn-success');setTimeout(()=>{copyBtn.innerHTML=originalText;copyBtn.classList.remove('btn-success');copyBtn.classList.add('btn-outline-secondary')},2000)})});</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8dfc8b7508b24763b93c8c17c0b6537f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
+    function logout() {
+        try {
+            localStorage.removeItem('_favorites');
+            localStorage.removeItem('_my_wheels');
+        } catch(e) {}
+        fetch('/api/auth/logout', { method: 'POST' }).then(function() { location.reload(); });
+    }
+    window._userAdFree = false;
+    (function() {
+        function getUserState() {
+            var match = document.cookie.match(/user_state=([^;]+)/);
+            if (!match) return null;
+            try {
+                var binary = atob(decodeURIComponent(match[1]));
+                var bytes = new Uint8Array(binary.length);
+                for (var i = 0; i < binary.length; i++) {
+                    bytes[i] = binary.charCodeAt(i);
+                }
+                var decoded = new TextDecoder('utf-8').decode(bytes);
+                var parts = decoded.split('|');
+                if (parts.length !== 5) return null;
+                return { userId: parts[0], nickname: parts[1], adFree: parts[2] === '1' };
+            } catch(e) { return null; }
+        }
+        
+        var state = getUserState();
+        if (state && state.adFree) {
+            window._userAdFree = true;
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.ad-container').forEach(function(el) { el.remove(); });
+                var kofi = document.getElementById('kofiBtn');
+                if (kofi) kofi.remove();
+            });
+        }
+        if (state) {
+            document.addEventListener('DOMContentLoaded', function() {
+                var authArea = document.getElementById('authArea');
+                if (!authArea) return;
+                
+                var homeUrl = '/';
+                var settingsUrl = '/settings';
+                var texts = {
+                    myFavorites: "\u6211\u7684\u6536\u85cf",
+                    settings: "\u8a2d\u5b9a",
+                    logout: "\u767b\u51fa"                };
+                
+                authArea.innerHTML = '<div class="relative" id="userMenu">' +
+                    '<button onclick="toggleUserMenu()" class="flex items-center gap-1 px-2 py-1 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition text-sm">' +
+                        '<span>👤<\/span>' +
+                        '<span class="max-w-[80px] truncate">' + state.nickname + '<\/span>' +
+                        '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/><\/svg>' +
+                    '<\/button>' +
+                    '<div id="userDropdown" class="hidden absolute right-0 top-full mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg py-1 min-w-[120px] z-50">' +
+                        '<a href="' + homeUrl + '#favorites" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">' + texts.myFavorites + '<\/a>' +
+                        '<a href="' + settingsUrl + '" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">' + texts.settings + '<\/a>' +
+                        '<button onclick="logout()" class="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">' + texts.logout + '<\/button>' +
+                    '<\/div>' +
+                '<\/div>';
+            });
+        }
+    })();</script> <script>!function(){
+        var a=!1,b=!1;
+        function c(e){
+            if(window._userAdFree)return;
+            e.dataset.adPushed||b||(e.dataset.adPushed="1",function(){try{(adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}}())
+        }
+        function d(e){
+            if(a)return e();
+            var f=document.createElement("script");
+            f.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8992771175158812";
+            f.async=!0;
+            f.crossOrigin="anonymous";
+            f.onload=function(){a=!0,e()};
+            f.onerror=function(){b=!0};
+            document.head.appendChild(f)
+        }
+        function e(){
+            if(window._userAdFree)return;
+            var a=new IntersectionObserver(function(b){
+                b.forEach(function(b){
+                    b.isIntersecting&&(a.unobserve(b.target),d(function(){c(b.target)}))
+                })
+            },{rootMargin:"100px"});
+            document.querySelectorAll(".adsbygoogle").forEach(function(b){a.observe(b)})
+        }
+        window.addEventListener("load",function(){setTimeout(e,500)})
+    }();</script> <script>var t = atob('ODg2bGlmZS5jb20=');
+        if (window.location.href.indexOf(t) < 0) {
+            window.location.href = 'https://www.' + t;
+        }</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6b6c9aab61ec4913a778f8411d813937","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
